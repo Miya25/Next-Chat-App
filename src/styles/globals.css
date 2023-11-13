@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+:root {
+  --bg-color: #111214;
+  --accent-color: #00b4d8;
+  --neon-glow: #00ffcc;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Orbitron', sans-serif;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #1a1e25, #111214);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--neon-glow);
+}
+
+a {
+  color: var(--neon-glow);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.container, input, button, .card, .input-field {
+  border-radius: 12px;
+  border: 2px solid var(--neon-glow);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.5), 0 0 10px rgba(0, 255, 204, 0.3);
+}
+
+.button {
+  background: linear-gradient(90deg, #00b4d8, #006080);
+  color: #fff;
+  padding: 18px 32px;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.8);
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #006080, #00b4d8);
+}
+
+.card {
+  background-color: #1a1e25;
+  padding: 36px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.7), 0 0 15px rgba(0, 255, 204, 0.5);
+}
+
+.icon {
+  color: var(--neon-glow);
+  font-size: 36px;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.8);
+}
+
+.input-field {
+  background-color: #1a1e25;
+  color: #fff;
+  padding: 20px;
+  border: 2px solid var(--neon-glow);
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0, 255, 204, 0.5);
+}
